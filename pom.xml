@@ -3,6 +3,20 @@
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>library-manager</artifactId>
+  <description>Demo project for Spring Boot</description>
+  <groupId>com.hsbc</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <name>library-manager</name>
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>2.4.4</version> <!-- lookup parent from repository -->
+  </parent>
+  <properties>
+    <java.version>11</java.version>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -19,12 +33,12 @@
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
     <dependency>
       <artifactId>spring-boot-starter-web</artifactId>
       <groupId>org.springframework.boot</groupId>
     </dependency>
-
     <dependency>
       <artifactId>h2</artifactId>
       <groupId>com.h2database</groupId>
@@ -90,20 +104,4 @@
       <version>4.12</version>
     </dependency>
   </dependencies>
-  <description>Demo project for Spring Boot</description>
-  <groupId>com.hsbc</groupId>
-  <modelVersion>4.0.0</modelVersion>
-  <name>library-manager</name>
-  <parent>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <groupId>org.springframework.boot</groupId>
-    <relativePath/>
-    <version>2.4.4</version> <!-- lookup parent from repository -->
-  </parent>
-  <properties>
-    <java.version>11</java.version>
-  </properties>
-
-  <version>0.0.1-SNAPSHOT</version>
-
 </project>
